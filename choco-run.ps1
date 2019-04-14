@@ -18,6 +18,9 @@ Write-Host ">>>> install: firefox"
 Write-Host ">>>> install: git"
 & choco upgrade git.install
 
+Write-Host ">>>> install: python"
+& choco upgrade python3
+
 Write-Host ">>>> configure: git"
 & git config --global user.name "Luiz Felipe Machado da Silva"
 & git config --global user.email "lfmachadodasilva@gmail.com"
