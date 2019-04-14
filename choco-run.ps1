@@ -12,12 +12,18 @@ Write-Host ">>>> enable auto confirmation"
 Write-Host ">>>> install: google chrome"
 & choco upgrade googlechrome
 
+Write-Host ">>>> install: firefox"
+& choco upgrade firefox
+
 Write-Host ">>>> install: git"
 & choco upgrade git.install
 
 Write-Host ">>>> configure: git"
 & git config --global user.name "Luiz Felipe Machado da Silva"
 & git config --global user.email "lfmachadodasilva@gmail.com"
+
+Write-Host ">>>> configure: github"
+& choco upgrade github-desktop
 
 Write-Host ">>>> install: dotnet core"
 & choco upgrade dotnetcore
