@@ -75,11 +75,11 @@ Write-Host ">>>> install: myexpenses"
 Write-Host ">>>> install: config"
 & git clone https://github.com/lfmachadodasilva/config.git
 # Export-StartLayout -Path “C:\Start\Layout.xml”
-$file = "LayoutModification.xml"
-$src = "C:\luizfelipe\config\"
-$dst = "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\"
-& Get-Item -Path $dst -Exclude $file
-& Copy-Item $src$file $dst$file -force
+# $file = "LayoutModification.xml"
+# $src = "C:\luizfelipe\config\"
+# $dst = "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\"
+# & Get-Item -Path $dst -Exclude $file
+# & Copy-Item $src$file $dst$file -force
 
 Install-Module PSWindowsUpdate
 Get-WindowsUpdate
