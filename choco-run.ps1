@@ -21,10 +21,6 @@ Write-Host ">>>> install: git"
 Write-Host ">>>> install: python"
 & choco upgrade python3
 
-Write-Host ">>>> configure: git"
-& git config --global user.name "Luiz Felipe Machado da Silva"
-& git config --global user.email "lfmachadodasilva@gmail.com"
-
 Write-Host ">>>> configure: github"
 & choco upgrade github-desktop
 
@@ -34,28 +30,18 @@ Write-Host ">>>> install: dotnet core"
 Write-Host ">>>> install: visual studio code"
 & choco upgrade visualstudiocode
 
-Write-Host ">>>> configure: visual studio code"
-& code --install-extension ms-vscode.csharp
-& code --install-extension donjayamanne.githistory
-& code --install-extension peterjausovec.vscode-docker
-& code --install-extension msjsdiag.debugger-for-chrome
-& code --install-extension mccarter.start-git-bash
-
 Write-Host ">>>> install: visual studio 2017 community"
 #& choco install visualstudio2017community
 & choco upgrade visualstudio2017community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
 Write-Host ">>>> install: sql server 2017"
-& choco upgrade sql-server-2017
+#& choco upgrade sql-server-2017
 
 Write-Host ">>>> install: nodejs"
 & choco upgrade nodejs
 
-Write-Host ">>>> install: angular"
-& npm install -g @angular/cli
-
 Write-Host ">>>> install: opencover"
-& choco upgrade opencover
+#& choco upgrade opencover
 
 Write-Host ">>>> install: cmder"
 & choco upgrade cmder
@@ -73,23 +59,4 @@ Write-Host ">>>> install: gimp"
 & choco upgrade gimp
 
 Write-Host ">>>> install: skype"
-& choco upgrade skype
-
-& mkdir c:\\luizfelipe
-& cd c:\\luizfelipe
-
-Write-Host ">>>> install: myexpenses"
-& git clone https://github.com/lfmachadodasilva/MyExpenses.git
-
-Write-Host ">>>> install: config"
-& git clone https://github.com/lfmachadodasilva/config.git
-# Export-StartLayout -Path “C:\Start\Layout.xml”
-# $file = "LayoutModification.xml"
-# $src = "C:\luizfelipe\config\"
-# $dst = "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\"
-# & Get-Item -Path $dst -Exclude $file
-# & Copy-Item $src$file $dst$file -force
-
-Install-Module PSWindowsUpdate
-Get-WindowsUpdate
-Install-WindowsUpdate
+#& choco upgrade skype
