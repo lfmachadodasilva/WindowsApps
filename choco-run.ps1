@@ -53,7 +53,7 @@ Write-Host ">>>> install: pgadmin"
 & choco upgrade pgadmin4
 
 Write-Host ">>>> install: docker"
-& choco upgrade docker
+#& choco upgrade docker
 
 Write-Host ">>>> install: gimp"
 & choco upgrade gimp
