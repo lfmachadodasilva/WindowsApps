@@ -22,7 +22,7 @@ Write-Host ">>>> install: python"
 & choco upgrade python3
 
 Write-Host ">>>> configure: github"
-& choco upgrade github-desktop
+#& choco upgrade github-desktop
 
 Write-Host ">>>> install: dotnet core"
 & choco upgrade dotnetcore
