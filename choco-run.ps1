@@ -38,7 +38,7 @@ Write-Host ">>>> install: sql server 2017"
 #& choco upgrade sql-server-2017
 
 Write-Host ">>>> install: nodejs"
-& choco upgrade nodejs
+& choco upgrade nodejs --version 10.3.0
 
 Write-Host ">>>> install: opencover"
 #& choco upgrade opencover
