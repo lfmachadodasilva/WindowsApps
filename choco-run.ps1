@@ -12,6 +12,9 @@ Write-Host ">>>> enable auto confirmation"
 Write-Host ">>>> install: google chrome"
 & choco upgrade googlechrome
 
+Write-Host ">>>> install: cmder"
+& choco upgrade cmder
+
 Write-Host ">>>> install: firefox"
 & choco upgrade firefox
 
