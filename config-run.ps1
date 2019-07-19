@@ -15,5 +15,11 @@ Write-Host ">>>> configure: git"
 Write-Host ">>>> install: myexpenses"
 & git clone https://github.com/lfmachadodasilva/MyExpenses.git
 
+Write-Host ">>>> install: myexpenses frontend"
+& git clone https://github.com/lfmachadodasilva/myexpenses-frontend.git
+
+Write-Host ">>>> install: myexpenses backend"
+& git clone https://github.com/lfmachadodasilva/myexpenses-backend.git
+
 Write-Host ">>>> install: config"
 & git clone https://github.com/lfmachadodasilva/config.git
