@@ -28,20 +28,20 @@ Write-Host ">>>> configure: github"
 #& choco upgrade github-desktop
 
 Write-Host ">>>> install: dotnet core"
-& choco upgrade dotnetcore
+& choco upgrade dotnetcore-sdk
 
 Write-Host ">>>> install: visual studio code"
 & choco upgrade visualstudiocode
 
 Write-Host ">>>> install: visual studio 2017 community"
 #& choco install visualstudio2017community
-& choco upgrade visualstudio2017community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+#& choco upgrade visualstudio2017community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
 Write-Host ">>>> install: sql server 2017"
 #& choco upgrade sql-server-2017
 
 Write-Host ">>>> install: nodejs"
-& choco upgrade nodejs --version 10.3.0
+& choco upgrade nodejs
 
 Write-Host ">>>> install: opencover"
 #& choco upgrade opencover
@@ -52,8 +52,9 @@ Write-Host ">>>> install: cmder"
 Write-Host ">>>> install: postman"
 & choco upgrade postman
 
-Write-Host ">>>> install: pgadmin"
+Write-Host ">>>> install: postgres"
 & choco upgrade pgadmin4
+& choco install postgresql --params '/Password:postgres' --params-global
 
 #Deprecated
 #Write-Host ">>>> install: docker"
@@ -64,3 +65,10 @@ Write-Host ">>>> install: gimp"
 
 Write-Host ">>>> install: skype"
 #& choco upgrade skype
+
+Write-Host ">>>> install: virtual box"
+& choco upgrade virtualbox
+
+Write-Host ">>>> install: docker"
+& choco upgrade docker-kitematic
+& choco upgrade docker-toolbox

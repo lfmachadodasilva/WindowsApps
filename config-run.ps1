@@ -1,9 +1,14 @@
+Write-Host ">>>> configure: install angular cli"
+& npm i @angular/cli
+
 Write-Host ">>>> configure: visual studio code"
 & code --install-extension ms-vscode.csharp
 & code --install-extension donjayamanne.githistory
 & code --install-extension peterjausovec.vscode-docker
 & code --install-extension msjsdiag.debugger-for-chrome
 & code --install-extension mccarter.start-git-bash
+& code --install-extension esbenp.prettier-vscode
+& code --install-extension vscode-icons-team.vscode-icons
 
 Write-Host ">>>> configure: git"
 & git config --global user.name "Luiz Felipe Machado da Silva"
