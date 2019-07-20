@@ -1,5 +1,5 @@
 Write-Host ">>>> configure: install angular cli"
-& npm i @angular/cli
+& npm install -g @angular/cli
 
 Write-Host ">>>> configure: visual studio code"
 & code --install-extension ms-vscode.csharp
