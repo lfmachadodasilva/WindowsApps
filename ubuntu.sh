@@ -8,7 +8,7 @@ sudo apt update &&
 
 ## Install packages and app from ubuntu ##
 
-sudo apt install python3 python-pip git build-essential libssl-dev checkinstall chromium-browser -y &&
+sudo apt install python3 python-pip git build-essential libssl-dev checkinstall chromium-browser gnome-tweaks -y &&
 
 ## install snap packages ##
 
