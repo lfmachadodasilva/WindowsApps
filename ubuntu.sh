@@ -2,11 +2,11 @@
 
 sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 
-## Update repository ##
+## update repository ##
 
 sudo apt update && 
 
-## Install packages and app from ubuntu ##
+## install packages and app from ubuntu ##
 
 sudo apt install python3 python-pip git build-essential libssl-dev checkinstall chromium-browser gnome-tweaks -y &&
 
@@ -24,7 +24,9 @@ sudo snap install spotify &&
 
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
-# configuration #
+## configuration ##
+
+gsettings set org.gnome.desktop.interface enable-animations false &&
 
 git config --global user.name "Luiz Felipe Machado da Silva" &&
 git config --global user.email "lfmachadodasilva@gmail.com" &&
