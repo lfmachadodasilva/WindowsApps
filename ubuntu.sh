@@ -15,7 +15,7 @@ sudo apt install python3 python-pip git build-essential libssl-dev checkinstall 
 sudo snap install slack --classic &&  
 sudo snap install skype --classic &&  
 sudo snap install code --classic &&  
-sudo snap install node --classic &&
+sudo snap install node --channel=13/stable --classic &&
 sudo snap install dotnet-sdk --classic &&
 sudo snap install insomnia &&  
 sudo snap install spotify &&
@@ -25,8 +25,6 @@ sudo snap install spotify &&
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
 # configuration #
-
-npm install npm@latest -g &&
 
 git config --global user.name "Luiz Felipe Machado da Silva" &&
 git config --global user.email "lfmachadodasilva@gmail.com" &&
