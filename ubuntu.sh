@@ -8,7 +8,7 @@ sudo apt update &&
 
 ## install packages and app from ubuntu ##
 
-sudo apt install python3 python-pip git build-essential libssl-dev checkinstall chromium-browser gnome-tweaks -y &&
+sudo apt install python3 python-pip git build-essential libssl-dev checkinstall chromium-browser gnome-extensions gnome-tweaks gnome-shell-extension-pixelsaver -y &&
 
 ## install snap packages ##
 
@@ -27,6 +27,7 @@ sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt
 ## configuration ##
 
 gsettings set org.gnome.desktop.interface enable-animations false &&
+gnome-extensions enable  pixel-saver@deadalnix.me &&
 
 git config --global user.name "Luiz Felipe Machado da Silva" &&
 git config --global user.email "lfmachadodasilva@gmail.com" &&
