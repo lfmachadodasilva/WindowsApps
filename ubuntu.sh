@@ -8,7 +8,13 @@ sudo apt update &&
 
 ## install packages and app from ubuntu ##
 
-sudo apt install python3 python-pip docker docker-compose git build-essential libssl-dev checkinstall chromium-browser gnome-tweaks gnome-shell-extension-pixelsaver -y &&
+sudo apt install \
+    python3 python-pip \
+    git docker docker-compose \
+    build-essential libssl-dev checkinstall \
+    chromium-browser \
+    gnome-extensions gnome-tweaks gnome-shell-extension-pixelsaver \
+    -y &&
 
 ## install snap packages ##
 
@@ -22,7 +28,7 @@ sudo snap install spotify &&
 
 ## update system ##
 
-sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
 ## configuration ##
 
