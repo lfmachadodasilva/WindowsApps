@@ -21,7 +21,6 @@
 
 * remove images
 > docker rmi
-`docker rmi`
 
 * run by step
 ```
