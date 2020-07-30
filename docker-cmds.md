@@ -1,28 +1,28 @@
-* show all images available
+### show all images available
 > docker images
 
-* show all container available
+### show all container available
 > docker ps
 
-* show all container active
+### show all container active
 > docker ps -a
 
-* show running log
+### show running log
 > docker logs -f CONTAINER_ID
 
-* remove and stop all containers
+### remove and stop all containers
 > docker rm -f $(docker ps -aq)
 
-* delete all images
+### delete all images
 > docker rmi $(docker images -q)
 
-* start/stop
+### start/stop
 > docker stop/start CONTAINER_ID
 
-* remove images
+### remove images
 > docker rmi
 
-* run by step
+### run by step
 ```
 # delete all images
 docker rmi $(docker images -q)
