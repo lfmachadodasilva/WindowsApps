@@ -19,10 +19,10 @@ sudo apt install \
 ## install snap packages ##
 
 sudo snap install slack --classic &&  
-sudo snap install skype --classic &&  
 sudo snap install code --classic &&  
-sudo snap install node --channel=13/stable --classic &&
+sudo snap install node --classic &&
 sudo snap install dotnet-sdk --classic &&
+sudo snap install go --classic &&
 sudo snap install insomnia &&  
 sudo snap install spotify &&
 
